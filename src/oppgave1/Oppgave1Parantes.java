@@ -31,9 +31,11 @@ public class Oppgave1Parantes {
 			if (erStartParantes(c)) {
 				stabel.push(c);
 			} else if (erSluttParantes(c)) {
-				if (stabel.isEmpty()) return false;
+				if (stabel.isEmpty()) 
+					return false;
 				char start = stabel.pop();
-				if (!erParantesPar(start, c)) return false;
+				if (!erParantesPar(start, c))
+					return false;
 			}
 		}
 		return stabel.isEmpty();

@@ -116,8 +116,7 @@ public class Oppgave2 {
             for (int i = 0; i < antallMålinger; i++) {
                 Integer[] tabell = genererTilfeldigTabell(n);
                 long startTid = System.nanoTime();
-                kvikksortering(tabell, 0, tabell.length -1); 
-                // Endrer metode her for kjøring , 0, tabell.length - 1
+                kvikksortering(tabell, 0, tabell.length -1);  // Endrer metode her for kjøring
                 long sluttTid = System.nanoTime();
                 totalTid += (sluttTid - startTid);
             }

@@ -15,28 +15,28 @@ public class Oppgave2Test {
     void testInnsettingsSortering() {
         Integer[] kopi = Arrays.copyOf(usortertTabell, usortertTabell.length);
         Oppgave2.innsettingsSortering(kopi);
-        assertArrayEquals(sortertTabell, kopi, "Innsettingssortering feilet");
+        assertArrayEquals(sortertTabell, kopi);
     }
 
     @Test
     void testUtvalgssortering() {
         Integer[] kopi = Arrays.copyOf(usortertTabell, usortertTabell.length);
         Oppgave2.utvalgssortering(kopi);
-        assertArrayEquals(sortertTabell, kopi, "Utvalgssortering feilet");
+        assertArrayEquals(sortertTabell, kopi);
     }
 
     @Test
     void testKvikksortering() {
         Integer[] kopi = Arrays.copyOf(usortertTabell, usortertTabell.length);
         Oppgave2.kvikksortering(kopi, 0, kopi.length - 1);
-        assertArrayEquals(sortertTabell, kopi, "Kvikksortering feilet");
+        assertArrayEquals(sortertTabell, kopi);
     }
 
     @Test
     void testFlettesortering() {
         Integer[] kopi = Arrays.copyOf(usortertTabell, usortertTabell.length);
         Oppgave2.flettesortering(kopi, 0, kopi.length - 1);
-        assertArrayEquals(sortertTabell, kopi, "Flettesortering feilet");
+        assertArrayEquals(sortertTabell, kopi);
     }
 }
 
